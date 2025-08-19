@@ -2,7 +2,7 @@ name: Build and deploy Jekyll site
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main ]   # change if your default branch is different
 
 permissions:
   contents: read
@@ -19,7 +19,6 @@ jobs:
           fetch-depth: 0
 
       - name: Checkout theme repository
-        # checks out the public repo itsfranrose/jekyll-github-pages into ./theme
         uses: actions/checkout@v4
         with:
           repository: itsfranrose/jekyll-github-pages
@@ -32,6 +31,22 @@ jobs:
           ruby-version: '3.1'
           bundler-cache: true
 
+      - name: Show Gemfile (debug)
+        run: |
+          echo "=== Gemfile ==="
+          cat Gemfile || true
+          echo "=== theme gemspec (first 200 lines) ==="
+          head -n 200 theme/*.gemspec || true
+
+      - name: Remove Gemfile.lock to force re-resolve (if present)
+        run: |
+          if [ -f Gemfile.lock ]; then
+            echo "Removing Gemfile.lock so Bundler will re-resolve dependencies."
+            rm -f Gemfile.lock
+          else
+            echo "No Gemfile.lock present."
+          fi
+
       - name: Tell Bundler to use local theme path
         run: bundle config local.jekyll-github-pages ./theme
 
@@ -42,7 +57,8 @@ jobs:
         run: bundle exec jekyll build --verbose
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v1
+        # use a current release of upload-pages-artifact (v4 recommended)
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./_site
 
@@ -54,4 +70,4 @@ jobs:
       id-token: write
     steps:
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,11 @@
+.sass-cache/
+.jekyll-metadata
+node_modules
+.vscode
+_site/
+*.gem
+.bundle
+.sass-cache
+Gemfile.lock
+package-lock.json
+jekyll-github-pages-*.gem

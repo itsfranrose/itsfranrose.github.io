@@ -4,18 +4,23 @@ meta:
 
 user:
   username: '<span style="color: #e9a467;">f</span>ran<span style="color: #de7873;">r</span>ose'
-  name: mehdi rafee
+  name: Mehdi Rafee
   short-description: '<span style="color: #d1443d;">enthusiastic</span> • <span style="color: #e38b3d;">adventurous</span>'
   title: programmer
   description: >
-    hi there, i'm a progammer based in isfahan, iran; passionate about
-    open-source software, systems programming, and tooling & tinkering.
-    currently i'm working on my personal development ecosystem,
-    and brushing up on my web development skills.
-    <br>anyhow, let's get going with the professional button-pressing, shall we?
+    Hi there, I'm a progammer based in Isfahan, Iran - endlessly curious, easily distracted by intriguing problems, and mostly up for a challenge.<br>
+    I'm fascinated by
+    <span style="color: #e36f6f;">o</span>pen-source <span style="color: #e36f6f;">s</span>oftware,
+    <span style="color: #6fe3df;">s</span>ystems <span style="color: #6fe3df;">p</span>rogramming,
+    and <span style="color: #9a6fe3;">t</span>ooling & <span style="color: #c06fe3">t</span>inkering
+    - the kind of things that make hours disappear without noticing.<br>
+    An unquenchable thirst drives me to venture in the world of forms - the kind that starts with a question and ends three rabbit holes later.<br>
+    Currently I'm working on my <span style="color: #84e36f;">p</span>ersonal <span style="color: #84e36f;">d</span>evelopment <span style="color: #84e36f;">e</span>cosystem,
+    and brushing up on my <span style="color: #e36fa1;">w</span>eb <span style="color: #e36fa1;">d</span>evelopment skills.<br>
+    Anyhow, let's get going with the professional button-pressing, shall we?
 
 footer:
-  quote: 'never give up without a fight. <span style="color: #9e7b52;">&general iroh</span>'
+  quote: 'Never give up without a fight. <span style="color: #9e7b52;">&General Iroh</span>'
 
 particles: true
 theme: jekyll-github-pages

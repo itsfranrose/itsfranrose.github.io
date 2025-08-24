@@ -1,6 +1,6 @@
 meta:
   title: franrose 
-  description: francis's page
+  description: franrose website
 
 user:
   username-prefix: its
@@ -8,6 +8,8 @@ user:
   name: Mehdi Rafee
   short-description: '<span style="color: #d1443d;">enthusiastic</span> • <span style="color: #e38b3d;">adventurous</span>'
   title: programmer
+
+about:
   description: >
     Hi there, I'm a progammer based in Isfahan, Iran - endlessly curious, easily distracted by intriguing problems, and mostly up for a challenge.<br>
     I'm fascinated by
@@ -21,6 +23,6 @@ user:
     Anyhow, let's get going with the professional button-pressing, shall we?
 
 footer:
-  quote: 'Never give up without a fight. <span style="color: #857676;">&General Iroh</span>'
+  quote: 'To be a fruitful field is to let no experience rot in vain:<br>all suffering ferment into becoming. <span style="color: #b06363;">&Friedrich Nietzsche</span>'
 
 theme: jekyll-github-pages

@@ -6,7 +6,9 @@ node_modules
 _site/
 *.gem
 .bundle
+.bundle-cache
 .sass-cache
 Gemfile.lock
+Gemfile.test.lock
 package-lock.json
 jekyll-github-pages-*.gem

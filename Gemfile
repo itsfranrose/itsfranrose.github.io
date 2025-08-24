@@ -4,5 +4,5 @@ source "https://rubygems.org"
 ruby "3.3.6" # optional but recommended so Actions uses the same Ruby
 
 gem "jekyll", "~> 4.2"
-gem "jekyll-github-pages", "~> 0.1.10"
+gem "jekyll-github-pages", "~> 0.1.11"
 gem "webrick" # needed for `jekyll serve`/server behavior; harmless for build

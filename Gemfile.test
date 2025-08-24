@@ -8,4 +8,4 @@ ruby "3.3.6" # optional but recommended so Actions uses the same Ruby
 gem "jekyll", "~> 4.2"
 gem "webrick" # needed for `jekyll serve`/server behavior; harmless for build
 
-gem "jekyll-github-pages", "~> 0.1.10", path: "/home/francis/Studio/Projects/jekyll-github-pages"
+gem "jekyll-github-pages", "~> 0.1.11", path: "/home/francis/Studio/Projects/jekyll-github-pages"
